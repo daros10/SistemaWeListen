@@ -34,9 +34,9 @@
     <span>o <a href="login.php">Inicia Sesión</a></span>
 
     <form action="signup.php" method="POST">
-      <input name="email" type="text" placeholder="Ingresa tu email">
-      <input name="password" type="password" placeholder="Ingresa tu contraseña">
-      <input name="confirm_password" type="password" placeholder="Confirma tu contraseña">
+      <input name="email" type="text" placeholder="Ingresa tu email" required>
+      <input name="password" type="password" placeholder="Ingresa tu contraseña" required>
+      <input name="confirm_password" type="password" placeholder="Confirma tu contraseña" required>
       <input type="submit" value="Registrarse">
     </form>
 

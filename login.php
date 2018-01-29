@@ -14,7 +14,7 @@
       $_SESSION['user_id'] = $results['id'];
       header("Location: /WeListen");
     } else {
-      $message = 'Lo sentimos, contraseña incorrenta';
+      $message = 'Lo sentimos, contraseña incorrenta o usuario no existe';
     }
   }
 ?>
@@ -38,8 +38,8 @@
     <span>o <a href="signup.php">Registrate</a></span>
 
     <form action="login.php" method="POST">
-      <input name="email" type="text" placeholder="Ingresa tu email">
-      <input name="password" type="password" placeholder="Ingresa tu contraseña">
+      <input name="email" type="text" placeholder="Ingresa tu email" required>
+      <input name="password" type="password" placeholder="Ingresa tu contraseña" required>
       <input type="submit" value="Iniciar Sesión">
     </form>
   </body>
