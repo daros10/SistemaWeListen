@@ -1,7 +1,7 @@
 <?php
   session_start();
   if (isset($_SESSION['user_id'])) {
-    header('Location: /WeListen');
+    header('Location: /SistemaWeListen');
   }
   require 'database.php';
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
@@ -12,7 +12,7 @@
     $message = '';
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
-      header("Location: /WeListen");
+      header("Location: /SistemaWeListen");
     } else {
       $message = 'Lo sentimos, contraseña incorrenta o usuario no existe';
     }
