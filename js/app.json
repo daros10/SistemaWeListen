@@ -1,0 +1,26 @@
+{
+  "songs": [
+    {
+      "id":0,
+      "name":"LaUltimaPalabra",
+      "artista":"Daniel Calveti",
+      "song":"music/LaUltimaPalabra.mp3",
+      "image":"img/dc.jpg"
+    },
+    {
+      "id":1,
+      "name":"AlFinal",
+      "artista":"Lilly Goodman",
+      "song":"music/AlFinal.mp3",
+      "image":"img/lg.jpg"
+    },
+    {
+      "id":2,
+      "name":"TeAmo",
+      "artista":"ROJO",
+      "song":"music/Te Amo.mp3",
+      "image":"img/rojo.jpg"
+    }
+
+  ]
+}
