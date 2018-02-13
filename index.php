@@ -100,6 +100,9 @@
                         <li>
                             <a href="musicaDisponible.html"><i class="fa fa-play-circle"></i> Tu música</a>
                         </li>
+                        <li>
+                            <a href="addMusic.php"><i class="fa fa-play-circle"></i> Agregar música</a>
+                        </li>
 
                     </ul>
                 </div>
@@ -116,11 +119,13 @@
                       <div class="row">
                         <div class="col-sm-4" >
                           <img id="img-album" src="img/music.png"  width="300" alt="">
-                          <audio id="player" controls="" ></audio>
+                          <audio id="player" controls="" ></audio><p></p>
+                          <button class="btn btn-primary btn-lg" id="shuffle"><i class="fa fa-random"></i></button>
                         </div>
                         <div class="col-sm-5">
-                          <button class="btn btn-succes" id="shuffle"><i class="fa fa-random"></i></button>
-                          <ul class="list-group" id="playlist"></ul>
+                          <h2>Canciones Disponibles</h2>
+                        <ul class="list-group" id="playlist"></ul>
+
                         </div>
 
                       </div>
@@ -132,10 +137,13 @@
 
 
 
+
+
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
+
       </div>
 
 
@@ -159,7 +167,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="dist/js/sb-admin-2.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/aplication.js"></script>
+
 
 
 
