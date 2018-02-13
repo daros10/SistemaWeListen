@@ -12,11 +12,12 @@
     $message = '';
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
-      header("Location: /SistemaWeListen");
+      header("Location: /SistemaWeListen/index.php");
     } else {
       $message = 'Lo sentimos, contraseña incorrenta o usuario no existe';
     }
   }
+
 ?>
 
 <!DOCTYPE html>
