@@ -10,7 +10,7 @@
     if ($stmt->execute()) {
       $message = 'Usuario creado satisfactoriamente';
     } else {
-      $message = 'Lo sentimos, debe haber habido un problema al crear su cuenta';
+      $message = 'Problema al crear cuenta, usuario ya existe!!';
     }
   }
 ?>
