@@ -1,3 +1,0 @@
-<p>
-  ABOUT TAG
-</p>
