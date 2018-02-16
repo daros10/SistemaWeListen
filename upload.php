@@ -44,7 +44,7 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
                             }
 
                               $json_string = json_encode($userData, JSON_NUMERIC_CHECK);
-                              $file = 'js/app.json';
+                              $file = 'js/appSongs.json';
                               file_put_contents($file, $json_string);
 
 
