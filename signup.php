@@ -16,11 +16,14 @@
 ?>
 <!DOCTYPE html>
 <html>
+<header class="masthead"> 
   <head>
     <meta charset="utf-8">
     <title>Registrate</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css"> 
   </head>
   <body>
 
@@ -41,4 +44,5 @@
     </form>
 
   </body>
+   </header> 
 </html>

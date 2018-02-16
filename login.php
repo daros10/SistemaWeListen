@@ -1,7 +1,7 @@
 <?php
   session_start();
   if (isset($_SESSION['user_id'])) {
-    header('Location: /SistemaWeListen');
+    header('Location: index1.html');
   }
   require 'database.php';
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
@@ -12,29 +12,32 @@
     $message = '';
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
-      header("Location: /SistemaWeListen/index.php");
+      header("Location: index.php");
     } else {
-      $message = 'Lo sentimos, contraseña incorrenta o usuario no existe';
+      $message = 'Lo sentimos, contraseña incorrecta o usuario no existe';
     }
   }
-
+ 
 ?>
 
 <!DOCTYPE html>
 <html>
+<header class="masthead">
   <head>
     <meta charset="utf-8">
     <title>Login</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <?php require 'partials/header.php' ?>
-
+ 
     <?php if(!empty($message)): ?>
       <p> <?= $message ?></p>
     <?php endif; ?>
-
+ 
     <h1>Inicia Sesión</h1>
     <span>o <a href="signup.php">Registrate</a></span>
 
@@ -44,4 +47,6 @@
       <input type="submit" value="Iniciar Sesión">
     </form>
   </body>
+  </header>
 </html>
+ 
