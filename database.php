@@ -3,9 +3,8 @@ $server = 'localhost';
 $username = 'root';
 $password = '';
 $database = 'weListen';
-try {
+
   $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
-} catch (PDOException $e) {
-  die('Connection Failed: ' . $e->getMessage());
-}
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 ?>
