@@ -83,20 +83,11 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-                            <!-- /input-group -->
-                        </li>
+
                         <li>
                             <a href="index.php"><i class="fa fa-music"></i> Inicio</a>
                         </li>
+
                         <li>
                             <a href="musicaDisponible.html"><i class="fa fa-play-circle"></i> Tu música</a>
                         </li>
@@ -121,6 +112,7 @@
                           <img id="img-album" src="img/music.png"  width="300" alt="">
                           <audio id="player" controls="" ></audio><p></p>
                           <button class="btn btn-primary btn-lg" id="shuffle"><i class="fa fa-random"></i></button>
+                          <button class="btn btn-primary btn-lg" id="addSong">Añadir cancion</button>
                         </div>
                         <div class="col-sm-5">
                           <h2>Canciones Disponibles</h2>
@@ -167,7 +159,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="dist/js/sb-admin-2.js"></script>
-    <script src="js/aplication.js"></script>
+    <script src="js/app.js"></script>
 
 
 
