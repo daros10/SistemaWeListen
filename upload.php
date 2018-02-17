@@ -1,4 +1,5 @@
 <?php
+
 if(isset($_POST['submit'])){
 $path = "music/"; //file to place within the server
 $valid_formats1 = array("mp3", "ogg", "flac"); //list of file extention to be accepted
@@ -18,12 +19,12 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
 
                           try {
                             require_once "database.php";
-
+							
                             $name= $_POST["titulo"];
                             $artista = $_POST["autor"];
-
-
-                            $sql = "INSERT INTO cancion (name, artista, song) VALUES ('$name','$artista','music/$actual_image_name')";
+							$user= $_POST["id2"]; 
+							
+                            $sql = "INSERT INTO cancion (name, artista, song, user) VALUES ('$name','$artista','music/$actual_image_name', '$user')";
                             $conn->exec($sql);
 
 
@@ -54,17 +55,17 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
                             echo $sql . "<br>" . $e->getMessage();
                           }
 
-                            echo '<script type="text/javascript">window.location="http://localhost:82/SistemaWeListen/addMusic.php";</script>';
+                            echo '<script type="text/javascript">window.location="http://localhost/welisten16-02/sistemawelisten/addMusic.php";</";</script>';
 
 
                             }
                         else
                             echo '<script language="javascript">alert("Error");</script>';
-                            echo '<script type="text/javascript">window.location="http://localhost:82/SistemaWeListen/addMusic.php";</script>';
+                            echo '<script type="text/javascript">window.location="http://localhost/welisten16-02/sistemawelisten/addMusic.php";</";</script>';
 
                     }else{
                         echo '<script language="javascript">alert("Archivo no soportado");</script>';
-                        echo '<script type="text/javascript">window.location="http://localhost:82/SistemaWeListen/addMusic.php";</script>';
+                        echo '<script type="text/javascript">window.location="http://localhost/welisten16-02/sistemawelisten/addMusic.php";</script>';
                     }
 
     }

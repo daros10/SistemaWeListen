@@ -129,6 +129,12 @@
                           <div class="form-group">
                               <input type="text" style="width:500px" class="form-control" name="autor" placeholder="Autor cancion" required>
                           </div>
+						  <div class="form-group">
+                              <input type="text" style="width:500px" class="form-control" name="id2" value="<?= $user['id']; ?>" required>
+                          </div>
+						  
+                     
+						<?= $user['id']; ?>
 
                           <hr style="border-color:beige;">
 
