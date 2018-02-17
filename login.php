@@ -17,7 +17,7 @@
       $message = 'Lo sentimos, contraseña incorrecta o usuario no existe';
     }
   }
- 
+
 ?>
 
 <!DOCTYPE html>
@@ -33,11 +33,11 @@
   </head>
   <body>
     <?php require 'partials/header.php' ?>
- 
+
     <?php if(!empty($message)): ?>
       <p> <?= $message ?></p>
     <?php endif; ?>
- 
+
     <h1>Inicia Sesión</h1>
     <span>o <a href="signup.php">Registrate</a></span>
 
@@ -49,4 +49,3 @@
   </body>
   </header>
 </html>
- 

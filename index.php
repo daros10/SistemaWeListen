@@ -27,14 +27,11 @@
     <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- MetisMenu CSS -->
-  <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
 
   <!-- Custom CSS -->
   <link href="dist/css/sb-admin-2.css" rel="stylesheet">
 
-  <!-- Morris Charts CSS -->
-  <link href="vendor/morrisjs/morris.css" rel="stylesheet">
 
   <!-- Custom Fonts -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -64,14 +61,8 @@
                         <i class="fa fa-user fa-fw"></i><i class="fa fa-caret-down"></i>
                         <?php if(!empty($user)): ?>
                         <?= $user['email']; ?>
-						<?= $user['id']; ?>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
                         <li><a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
@@ -90,7 +81,7 @@
                         </li>
 
                         <li>
-                            <a href="musicaDisponible.html"><i class="fa fa-play-circle"></i> Tu música</a>
+                            <a href="tuMusica.php"><i class="fa fa-play-circle"></i> Tu música</a>
                         </li>
                         <li>
                             <a href="addMusic.php"><i class="fa fa-play-circle"></i> Agregar música</a>
@@ -125,13 +116,6 @@
 
                     </div>
 
-
-
-
-
-
-
-
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -144,7 +128,7 @@
 
       <!--renderiza directamente la pagina de login-->
     <?php else:
-       header('Location: index1.html'); 
+       header('Location: index1.html');
       ?>
     <?php endif; ?>
 
@@ -155,8 +139,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="vendor/metisMenu/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="dist/js/sb-admin-2.js"></script>

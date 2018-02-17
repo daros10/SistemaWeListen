@@ -19,12 +19,12 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
 
                           try {
                             require_once "database.php";
-							
+
                             $name= $_POST["titulo"];
                             $artista = $_POST["autor"];
-							$user= $_POST["id2"]; 
-							
-                            $sql = "INSERT INTO cancion (name, artista, song, user) VALUES ('$name','$artista','music/$actual_image_name', '$user')";
+							              $user= $_POST["id2"];
+
+                            $sql = "INSERT INTO cancion (name, artista, song, idUser) VALUES ('$name','$artista','music/$actual_image_name', '$user')";
                             $conn->exec($sql);
 
 
@@ -55,17 +55,17 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
                             echo $sql . "<br>" . $e->getMessage();
                           }
 
-                            echo '<script type="text/javascript">window.location="http://localhost/welisten16-02/sistemawelisten/addMusic.php";</";</script>';
+                            echo '<script type="text/javascript">window.location="http://localhost:82/SistemaWeListen/addMusic.php"</script>';
 
 
                             }
                         else
                             echo '<script language="javascript">alert("Error");</script>';
-                            echo '<script type="text/javascript">window.location="http://localhost/welisten16-02/sistemawelisten/addMusic.php";</";</script>';
+                            echo '<script type="text/javascript">window.location="http://localhost:82/SistemaWeListen/addMusic.php"</script>';
 
                     }else{
                         echo '<script language="javascript">alert("Archivo no soportado");</script>';
-                        echo '<script type="text/javascript">window.location="http://localhost/welisten16-02/sistemawelisten/addMusic.php";</script>';
+                        echo '<script type="text/javascript">window.location="http://localhost:82/SistemaWeListen/addMusic.php"</script>';
                     }
 
     }
