@@ -106,8 +106,6 @@
                         ?>
 
                         <div class="jumbotron">
-
-
                         <table class="table" >
                           <thead>
                             <tr>
@@ -134,7 +132,7 @@
                          ?>
                         </table>
                       </div>
-    
+
 
 
 

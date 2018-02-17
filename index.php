@@ -123,9 +123,6 @@
 
       </div>
 
-
-
-
       <!--renderiza directamente la pagina de login-->
     <?php else:
        header('Location: index1.html');
