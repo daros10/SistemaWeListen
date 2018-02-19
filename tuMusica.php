@@ -96,7 +96,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Tu Música</h1>
+                    <h1 class="page-header">Tu música      Para buscar presionar F3</h1>
                     <div class="container">
 
 
