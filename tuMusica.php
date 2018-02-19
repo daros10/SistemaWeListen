@@ -12,7 +12,7 @@
     }
   }
 ?>
-
+<link rel="shortcut icon" type="image/x-icon" href="pantallaprueba/img/iconlogoWeListen.ico">
 <!DOCTYPE html>
 <html>
   <head>

@@ -12,7 +12,7 @@
     }
   }
 ?>
-
+<link rel="shortcut icon" type="image/x-icon" href="pantallaprueba/img/iconlogoWeListen.ico">
 <!DOCTYPE html>
 <html>
   <head>
@@ -104,7 +104,7 @@
                           <img id="img-album" src="img/music.png"  width="300" alt="">
                           <audio id="player" controls="" ></audio><p></p>
                           <button class="btn btn-primary btn-lg" id="shuffle"><i class="fa fa-random"></i></button>
-                          <button class="btn btn-primary btn-lg" id="addSong">Añadir cancion</button>
+                          
                         </div>
                         <div class="col-sm-5">
                           <h2>Canciones Disponibles</h2>

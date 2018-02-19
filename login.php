@@ -19,17 +19,20 @@
   }
 
 ?>
-
+<link rel="shortcut icon" type="image/x-icon" href="pantallaprueba/img/iconlogoWeListen.ico">
 <!DOCTYPE html>
 <html>
 <header class="masthead">
   <head>
     <meta charset="utf-8">
     <title>Login</title>
+	
+
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
   </head>
   <body>
     <?php require 'partials/header.php' ?>
@@ -39,7 +42,7 @@
     <?php endif; ?>
 
     <h1>Inicia Sesión</h1>
-    <span>o <a href="signup.php">Registrate</a></span>
+    <span>o <a href="signup.php">Regístrate</a></span>
 
     <form action="login.php" method="POST">
       <input name="email" type="text" placeholder="Ingresa tu email" required>

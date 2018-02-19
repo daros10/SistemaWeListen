@@ -14,12 +14,16 @@
     }
   }
 ?>
+
+<link rel="shortcut icon" type="image/x-icon" href="pantallaprueba/img/iconlogoWeListen.ico">
 <!DOCTYPE html>
 <html>
 <header class="masthead"> 
-  <head>
-    <meta charset="utf-8">
-    <title>Registrate</title>
+  <head> <meta charset="utf-8">
+    <title>Regístrate</title>
+	
+   <link rel="shortcut icon" type="image/x-icon" href="pantallaprueba/img/iconlogoWeListen.ico">
+   
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
  
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">

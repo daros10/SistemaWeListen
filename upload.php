@@ -55,17 +55,17 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
                             echo $sql . "<br>" . $e->getMessage();
                           }
 
-                            echo '<script type="text/javascript">window.location="http://localhost:82/SistemaWeListen/addMusic.php"</script>';
+                            echo '<script type="text/javascript">window.location="http://localhost/WeListenFinal/SistemaWeListen/addMusic.php"</script>';
 
 
                             }
                         else
                             echo '<script language="javascript">alert("Error");</script>';
-                            echo '<script type="text/javascript">window.location="http://localhost:82/SistemaWeListen/addMusic.php"</script>';
+                            echo '<script type="text/javascript">window.location="http://localhost/WeListenFinal/SistemaWeListen/addMusic.php"</script>';
 
                     }else{
                         echo '<script language="javascript">alert("Archivo no soportado");</script>';
-                        echo '<script type="text/javascript">window.location="http://localhost:82/SistemaWeListen/addMusic.php"</script>';
+                        echo '<script type="text/javascript">window.location="http://localhost/WeListenFinal/SistemaWeListen/addMusic.php"</script>';
                     }
 
     }
